@@ -1,3 +1,8 @@
+function showInfobar(){
+	if($(".infobar").offset().top <= $(window).height()+$(window).scrollTop())
+		$(".infobar").fadeIn(1500);
+}
+
 window.onload = function(){
 	/*
 	$(".testdiv").width = "100$";
@@ -8,17 +13,19 @@ window.onload = function(){
 	console.log($(window).scrollTop());
 	console.log($(".infobar").offset().top);
 	
-	$("h1").fadeOut(1);
+	$("h1").fadeOut(0);
 	$("h1").fadeIn(1000);
 	
 	$("img").slideUp(0);
 	$("img").slideDown(1000);
 	
-	$(".infobar").fadeOut(10);
-	window.onscroll = function(){
-		if($(".infobar").offset().top <= $(window).height()+$(window).scrollTop())
-			$(".infobar").fadeIn(1500);
-	};
+	$(".infobar").fadeOut(0);
+	
+	window.setTimeout(function(){
+		showInfobar();
+		window.onscroll = showInfobar;
+	}, 1000);
+	
 	var toolbar = document.getElementById("toolbar");
 	toolbar.style.width="100%";
 	toolbar.style.height="50px";
