@@ -40,6 +40,15 @@ window.onload = function(){
 		$(".layer3 .donghua").slideDown(1000);
 	}, 3000);
 	
+	$(".achievement").slideUp(0);
+	self.setTimeout(function(){
+		$(".achievement").slideDown(1000);
+	}, 4000);
+	
+	$(".events").slideUp(0);
+	self.setTimeout(function(){
+		$(".events").slideDown(1000);
+	}, 5000);
 	/*
 	self.setTimeout(function(){
 		$(".layer3 .model").css("float", "none");
