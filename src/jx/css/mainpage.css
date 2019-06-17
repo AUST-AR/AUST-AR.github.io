@@ -77,14 +77,18 @@ html{
 .blocktitle{
 	position:relative;
 	left: 20px;
-	top: 20px;
+	//top: 20px;
 }
 
 .bfintro{
 	position: relative;
 	left: 5%;
 	width: 90%;
-	top: 10px;
+	//top: 10px;
+}
+
+.layer2{
+	padding: 20px;
 }
 
 .layer2 p{
@@ -111,9 +115,11 @@ html{
 }
 
 .layer3 .model{
+	padding: 20px auto;
 	margin: auto 20px;
-	width: 20%;
-	height: 400px;
+	width: 21%;
+	min-height: 400px;
+	//height: 400px;
 	border-radius: 10px;
 	box-shadow: 0 0 20px #000033;
 	display: inline-block;
@@ -164,11 +170,13 @@ html{
 
 .achievement p{
 	color: beige;
+	position: relative;
+	left: 20px;
 }
 
 .achievement h1{
 	position: relative;
-	top: 
+	left: 20px
 }
 
 .events{
