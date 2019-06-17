@@ -109,9 +109,12 @@ window.onload = function(){
 	}, 5000);
 	
 	iconAnimate();
+	
 	/*
-	self.setTimeout(function(){
-		$(".layer3 .model").css("float", "none");
-	}, 4000);
+	console.log($(window).height());
+	console.log($(window).scrollTop());
+	console.log($(".events").offset().top);
+	$(".events").css("height", $(window).height + $(window).scrollTop() - $(".events").offset().top);
+	console.log($(".events").css("height"));
 	*/
 }
