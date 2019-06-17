@@ -1,3 +1,61 @@
+function iconAnimate(){
+	$(".jigou a").mouseover(function(){
+		$(".jigou a img").animate({
+			width: "+=10",
+			height: "+=10",
+		},500);
+	});
+	
+	$(".jigou a").mouseleave(function(){
+		$(".jigou a img").animate({
+			width: "70px",
+			height: "70px",
+		},500);
+	});
+	
+	$(".kongzhi a").mouseover(function(){
+		$(".kongzhi a img").animate({
+			width: "+=10",
+			height: "+=10",
+		},500);
+	});
+	
+	$(".kongzhi a").mouseleave(function(){
+		$(".kongzhi a img").animate({
+			width: "70px",
+			height: "70px",
+		},500);
+	});
+	
+	$(".donghua a").mouseover(function(){
+		$(".donghua a img").animate({
+			width: "+=10",
+			height: "+=10",
+		},500);
+	});
+	
+	$(".donghua a").mouseleave(function(){
+		$(".donghua a img").animate({
+			width: "70px",
+			height: "70px",
+		},500);
+	});
+	
+	$(".shijue a").mouseover(function(){
+		$(".shijue a img").animate({
+			width: "+=10",
+			height: "+=10",
+		},500);
+	});
+	
+	$(".shijue a").mouseleave(function(){
+		$(".shijue a img").animate({
+			width: "70px",
+			height: "70px",
+		},500);
+	});
+}
+
 window.onload = function(){
 	$(".layer1 .toolbar a").fadeOut(0);
 	$(".layer1 .toolbar a").fadeIn(1000);
@@ -49,6 +107,8 @@ window.onload = function(){
 	self.setTimeout(function(){
 		$(".events").slideDown(1000);
 	}, 5000);
+	
+	iconAnimate();
 	/*
 	self.setTimeout(function(){
 		$(".layer3 .model").css("float", "none");
