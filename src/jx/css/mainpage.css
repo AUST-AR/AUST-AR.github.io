@@ -90,8 +90,9 @@ h1{
 }
 
 .layer3{
-	widht: 90%;
-	height: 900px;
+	width: 100%;
+	//padding: 0px auto 100px 0px;
+	height: 1000px;
 	background-color: #eeeeee;
 	text-align: center;
 	position: relative;
