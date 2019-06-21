@@ -14,7 +14,7 @@ function initCanva(){
 	canvaMouseOn();
 }
 
-function showBubble(){
+function showImage(){
 	$(".centerbubble").fadeOut(0);
 	$(".gamebubble").fadeOut(0);
 	$(".version").fadeOut(0);
@@ -96,13 +96,20 @@ function canvaMouseOn(event){
 			drawEye(ctx, x, y, e.clientX, e.clientY);
 }
 
+function canvaTouchOn(event){
+	var e = event || window.event
+	e.preventDefault()
+	canvaMouseOn(e)
+}
+
 window.onload = function(){
 	var bgcanva = document.getElementById("bgcanva");
 	var context = bgcanva.getContext("2d");
 	var canva_width = bgcanva.width;
 	var canva_height = bgcanva.height;
 	initCanva();
-	showBubble();
+	showImage();
 	
 	window.onmousemove = canvaMouseOn;
+	window.ontouchmove = canvaTouchOn;
 } 
