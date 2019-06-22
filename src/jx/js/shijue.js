@@ -9,8 +9,6 @@ function initCanva(){
 	var bgcanva = document.getElementById("bgcanva");
 	$(window).resize(resizeCanva); 
 	resizeCanva();
-	$("#bgcanva").attr("width",$(window).get(0).innerWidth);
-	$("#bgcanva").attr("height",$(window).get(0).innerHeight);
 	canvaMouseOn();
 }
 
@@ -20,6 +18,7 @@ function showImage(){
 	$(".version").fadeOut(0);
 	$(".math").fadeOut(0);
 	$(".graphic").fadeOut(0);
+	$(".show").fadeOut(0);
 	$("#bgcanva").fadeOut(0);
 	$(".centerbubble").fadeIn(500);
 	window.setTimeout(function(){
@@ -35,8 +34,11 @@ function showImage(){
 		$(".graphic").fadeIn(500);
 	},1300);
 	window.setTimeout(function(){
-		$("#bgcanva").fadeIn(500);
+		$(".show").fadeIn(500);
 	},1500);
+	window.setTimeout(function(){
+		$("#bgcanva").fadeIn(500);
+	},1700);
 }
 
 function drawEye(ctx, x, y, mx, my){

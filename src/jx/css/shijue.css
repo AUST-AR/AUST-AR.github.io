@@ -119,6 +119,23 @@ canvas {
 	font-size: 20px;
 }
 
+.show {
+	background-color: #006400;
+	left: 20%;
+	top: 45%;
+	width: 160px;
+	height: 160px;
+}
+
+.show div{
+	line-height: 160px;
+}
+
+.show div p{
+	color: whitesmoke;
+	font-size: 20px;
+}
+
 a {
 	display: block;
 	margin: 0 0;
