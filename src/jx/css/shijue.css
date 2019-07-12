@@ -68,6 +68,25 @@ canvas {
 	color: white;
 }
 
+.project {
+	left: 50%;
+	top:80%;
+	background-color: cornflowerblue;
+	width: 170px;
+	height: 170px;
+}
+
+.project div{
+	line-height: 50px;
+}
+
+.project div p{
+	position: relative;
+	top: 30px;
+	font-size:25px;
+	color: white;
+}
+
 .math{
 	left: 20%;
 	top: 80%;
